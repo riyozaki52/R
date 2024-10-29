@@ -1,0 +1,175 @@
+body{
+  font-family:'Montserrat';
+  background-color: rgb(0, 0, 0);
+}
+
+@font-face{
+  font-family:'Montserrat';
+
+  src:url(fonts/Montserrat-Black.woff);
+ 
+}
+
+@font-face{
+font-family: 'oswald';
+src:url(fonts/Oswald-Medium.ttf);
+}
+@font-face{
+  font-family: 'great';
+  src:url(fonts/The\ Zombie\ Birds.ttf);
+
+}
+@keyframes fade-up{
+  0%{ opacity:0.5;
+      transform: translatex(-400px);
+   
+}
+100% {opacity: 1;
+
+}
+}
+@keyframes b {
+  0%{
+      background-color: rgb(0, 0, 0);
+      mix-blend-mode:normal;
+      width: 400px;
+      height: 400px;
+      transform: translatex(400px);
+  }
+
+}
+.header{
+  position: fixed;
+  width: 100%;
+}
+
+.navbar{
+  text-decoration: none;
+  margin-left: 55%;
+  margin-top: 3%;
+}
+
+
+.navbar a{
+  color: #5d5c61;
+  text-decoration: none;
+  font-size:x-large;
+  padding: 14px;
+  margin-top: 5%;
+}
+
+.navbar a:hover{
+  color: rgb(255, 255, 255);
+ text-shadow: 1px 2px 6px  #ffffff;
+}
+.logo{
+  color: rgb(241, 241, 241);
+  margin-top: -4%;
+  margin-left: 3%;
+  font-size: 180%;
+  
+}
+
+img{
+  margin-top: 10%;
+  margin-left: 65%;
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+  animation: fade-up 5s;
+
+}
+
+.slogo {
+  margin-top: 10%;
+color: #ffffff;
+margin-top: -25%;
+margin-left: 10%;
+font-size: 550%;
+filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
+animation: fade-up 4s;
+}
+.s{
+  animation: b 3s;
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: 0.1s;
+  transform: translate(-50%,-50%); 
+  pointer-events: none;
+  mix-blend-mode:difference;
+  margin-left: 8%;
+ margin-top: 3.5%;
+}
+
+.def{
+  font-family: 'oswald';
+padding-bottom: 10%;
+  margin-top: 50%;
+color: white;
+text-align: center;
+font-size: 320%;
+}
+.gr{color: white;
+   font-family: 'great';
+  text-align: center;
+  margin-top: -5%;
+  }
+
+  .rauf {
+      font-size: 140%;
+      position: relative;
+    }
+    
+    .rauff {
+      position: relative;
+      z-index: 1;
+      animation: beat 2s linear infinite;
+    }
+    
+    .raufb {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      animation: echo 2s linear infinite;
+    }
+    
+    @keyframes beat {
+      0% {
+        transform: scale(1);
+      }
+      14% {
+        transform: scale(0.9);
+      }
+      21% {
+        transform: scale(1.1) skew(0.004turn)
+      }
+      28% {
+        transform: scale(1) skew(0.008turn);
+      }
+      35% {
+        transform: scale(1) skew(0)
+      }
+    }
+    
+    @keyframes echo {
+      0% {
+        opacity: 0.5;
+        transform: scale(1);
+      }
+      14% {
+        opacity: 0.4;
+        transform: scale(0.8);
+      }
+      21% {
+        opacity: 0.4;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
+
